@@ -2,6 +2,6 @@
 
 ctrl + o 누르면 오버라이드 할 메서드를 고를 수 있다.
 
-generate 단축키
+generate 단축키!
 
 ctrl + n하면 생성자, getter,setter 등 선택해서 만들수있다
