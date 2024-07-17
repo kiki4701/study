@@ -1,0 +1,11 @@
+C# 입문 0-2
+
+Console.ReadLine()은 원래 입력을 받는 역할
+
+Console.WriteLine({0}, Console.ReadLine());
+
+하면 Console.ReadLine()에 입력된 문자열이 {0}안에 들어가서 출력된다.
+
+Console.WriteLine("안녕하세요. {0} 님 {1}.", Console.ReadLine(), "어서오세요.");
+
+이렇게 입력을 하게 되면 {0}에 Console.ReadLine()의 입력된 문자열이 들어가게 되고 {1}에 어서오세요. 라는 문자열이 들어가게 된다
