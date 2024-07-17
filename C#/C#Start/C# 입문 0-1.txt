@@ -1,0 +1,13 @@
+C# 입문 0-1
+
+Console.WriteLine(); 출력하는 메서드 (자바 sout)
+
+cw 치고 tab 누르면 Console.WriteLine() 바로 생성
+
+Console.WriteLine()은 println 처럼 엔터까지 입력
+
+Console.Write()는 print처럼 줄 변경안되고 붙어서 출력
+
+Console.ReadLine()은 CMD창 같이 생긴거 바로 안없어지고 거기에 출력되게 붙잡아줌
+
+ctrl + d 누르면 현재 줄 복사
