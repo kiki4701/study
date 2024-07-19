@@ -1,0 +1,35 @@
+C# 입문 0-19
+
+get,set 을 설정할때 자바랑 많이 다르다
+
+만약 string name; 이라는 변수의 get,set을 설정하고 싶다면
+
+클래스내에서 변수명은 string name; 이라고 선언 한 뒤,
+
+public string Name{}이라는 get,set을 설정하기 위한 변수를 또 만들어주게 되고 다른곳에서 호출 할 때는 Name 변수를 통하여 set과 get에 접근하게 된다
+
+예를들면
+
+int age;
+
+public int Age
+{
+    get
+    {
+        return age;
+    }
+    set
+    {
+        age = age + 10;
+    }
+}
+
+이런식으로 클래스 내에서 age 변수를 선언한 뒤 다른곳에서 호출 할때는 public Age 변수를 사용하여 age에 접근하여 사용하게 된다
+
+지금 예시에서는 set을 할 때 입력된 값에 10을 더해주기 위한 설정인데,
+
+그런 추가적인 변화 없이 입력되는대로 set,get을 사용하고싶다면
+
+그냥 public int age {get; set;}
+
+이렇게 선언하면 다른곳에서 똑같이 get,set 을 사용할 수 있다.
