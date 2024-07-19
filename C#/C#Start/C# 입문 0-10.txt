@@ -1,0 +1,11 @@
+C# 입문 0-10
+
+#region
+
+#endregion
+
+을 하면 중간부분을 접는 버튼이 생긴다.
+
+Console.ReadLine();은 string 으로 반환이 되기 때문에 만약 int 자료형을 입력을 받고 싶다고 하면 Convert.Toint32(Console.ReadLine());으로 형변환을 해줘야 한다.
+
+메서드의 매개변수에 배열이 오는경우 배열 앞에 params를 붙히는듯..?
