@@ -8,4 +8,4 @@ CPU는 데이터타입을 판단하는 능력이 없기 때문에 자료형을 �
 
 sizeof(자료형)을 입력하면 데이터타입의 사이즈를 바이트 단위로 출력해준다
 
-ex) Console.WriteLine("(int의 저장공간 크기 {0} byte", sizeof(int));
+ex) Console.WriteLine("int의 저장공간 크기 {0} byte", sizeof(int));
