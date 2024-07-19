@@ -1,0 +1,15 @@
+C# 입문 0-15
+
+foreach 문은 자바에서 향상된 for문이랑 같다.
+
+사용법이 자바랑은 조금 다른데
+
+foreach(string a in str)
+
+{
+
+}
+
+이런식으로 foreach문을 작성하게 되면
+
+string[] str 안의 string 변수명 a 를 사용하여 변수 하나하나에 접근할 수 있게 된다.
