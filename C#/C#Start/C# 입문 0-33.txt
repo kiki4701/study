@@ -1,0 +1,37 @@
+C# 입문 0-33
+
+Func 대리자와 Action 대리자
+
+원래 익명메소드를 만들기 위해서는 매번 대리자 (delegate)를 만들어야 했다
+
+하지만 Func와 Action을 사용하면 delegate를 만들지 않아도 된다
+
+Func는 반환값이 있을 때 사용하고 Action은 반환값이 없을 때 사용한다
+
+Func<int, int, int> _func1 = (int x, int y) => x + y;
+
+이런식으로 사용해주면 되는데 <>안에 들어있는 값들은 맨 뒤의값만 반환값이고 그걸 뺀 나머지는 매개변수를 넣어주면 된다.
+
+사용은 그냥 메서드처럼 사용하면 된다
+
+만약 Func<int> _func2 = () => 50;
+
+이렇게 하면 매개변수는 없고 반환값만 int가 나오게 된다.
+
+Func<int, string> _func3 = (int x) => x + "입니다";
+
+이렇게하면 매개변수는 int 이고 반환값은 string이다
+
+Action 은 반환값이 없을 때 사용하는 것으로
+
+Action<int, int> action = (x, y) =>
+
+{
+
+    Console.WriteLine("액션대리자 값 : " + x * y);
+
+}
+
+이런식으로 매개변수만 넣어주고 사용하면 된다.
+
+Func와 Action 둘다 매개변수로 최대 16개까지 받을 수 있다.
