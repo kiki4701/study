@@ -1,0 +1,21 @@
+자마린 3
+
+페이지 실행할 때는 App.xaml.cs 파일에 App()메서드 부분에
+
+MainPage = new 실행할페이이름();
+
+이렇게 해서 실행시키면 된다.
+
+툴바를 사용할 때에는 NavigationPage로 감싸줘야한다.
+
+MainPage = new NavigationPage(new Ch_3_ToolbarPage1());
+
+그래야 버튼을 누르고 toolbar 가 나온다.
+
+<ContextPage.ToolbaItems>
+
+    <ToolbarItem Text="출력할 글자"/>
+
+</ContextPage.ToolbarItems>
+
+이렇게 ContextPage 안에 툴바들을 추가하면 된다.

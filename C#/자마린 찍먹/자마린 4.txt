@@ -1,0 +1,21 @@
+자마린 4
+
+텝 페이지는 Views 에서 만들 때 탭페이지 파일로 만들어준다.
+
+TabbedPage tabbed = new TabbedPage();
+
+인스턴스 생성 해준뒤
+
+tabbed.Children.Add(new 추가할 뷰페이지);
+
+tabbed.Children.Add(new 추가할 뷰페이지);
+
+tabbed.Children.Add(new 추가할 뷰페이지);
+
+MainPage = tabbed;
+
+하면 페이지들을 연결할 수 있다.
+
+탭에 뷰페이지의 이름을 넣고 싶으면
+
+tabbed.Children.Add(new 추가할 뷰페이지 {Title = "페이지이름"); 이렇게 하면 이름을 설정할 수 있다.
