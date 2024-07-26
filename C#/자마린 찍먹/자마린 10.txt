@@ -1,0 +1,9 @@
+자마린 10
+
+한줄은 Entry, 여러줄은 Editor
+
+xaml 에서 플랫폼마다 다르게 설정 해주고 싶을때는 속성값 지정할 때 Onplatform Android = ~~ 이런식으로 나눠서 설정해줄 수 있다.
+
+ex) BackgroundColor = "{OnPlatform Android = Blue, UWP = White}"
+
+cs파일(C# 으로 구현) 할떄는 if 문안에 (Device.RuntimePlatform == Device.UWP) {} 이런식으로 나눠서 구현을 해주면 된다.

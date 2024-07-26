@@ -1,0 +1,28 @@
+자마린 11
+
+Slider는 유투브볼때 밑에 재생시간 바 를 만드는것
+
+MinimumTrackColor는 바에서 빨간점 기준 왼쪽의 색깔,
+
+MaximumTrackColor는 빨간 점 기준 오른쪽의 색깔!
+
+BindingContext 는 지금 개체에 어떤 값을 참고할 것이냐 알려주는것 "{x:reference slider1}" 라고 설정을 하면 slider1 이라는 것을 참고할것이라는 뜻. FontSize = "{Binding Value}" 라고 하면 폰트사이즈는 아까 바인딩 한 slider1 의 값을 사용하겠다는 의미
+
+속성 설정할 때 x: 어쩌구 라고 사용하는 이유는 코드 맨 위에 xmins : x = "http://~~~~" 라고 해놨기 때문
+
+만약
+
+xmins : x1 = "http://~~~~" 라고 해놨으면
+
+x1 : reference 이런식으로 이름을 맞춰서 사용해야 한다.
+
+Stepper 는 - + 두개의 버튼을 생성해서 각 버튼을 누르면 value 값이 변하게 하는 것
+
+Value = "~~" 속성을 이용해 초기값을 설정 할 수 있다.
+
+ValueChanged = "stepper1_ValueChanged" 라고 속성을 설정하면 stepper1 의 value값이 변경되었을 때 이벤트를 설정할 수 있게 되는것
+
+cs파일에 생성된 stepper1_ValueChanged 라는 메서드안에 변경 될 코드를 설정하면 된다.
+
+e.NewValue 는 메서드의 매개변수인 e가 변했을 때 그 변한 값을 말한다.
+stepper에서 value를 넘겨줄 때는 double 형으로 넘겨주기 때문에 그걸 Text속성에 넣을 때는 바로 넣어줄 수 없고 ToString()으로 형변환 해줘야 한다.
