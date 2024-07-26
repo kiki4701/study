@@ -1,0 +1,25 @@
+MAUI 4
+
+플라이아웃은 그 한쪽구석에 있는 메뉴바 같은거 누르면 나오고 평소엔 사라지는..
+
+콘텐츠페이지 생성후 Flyout으로 바꿔줌, 비하인드 가서 상속도 바꿔줌
+
+콘텐츠페이지에 Title속성을 설정 안해주면 화면이 안나온다
+
+플라이아웃.Detail 은 처음 나오는 본문이고
+
+플라이아웃.Flyout 은 드래그했을 때 나오는 화면이다.
+
+플라이아웃보다 플라이아웃아이템이 더 쓰기 좋다
+
+Views 에 페이지 한개 만들고 메인페이지아 AppShell()페이지가 뜨게 설정한다.
+
+Shell은 다른 콘텐츠페이지를 불러와서 보여줄 수가 있다.
+
+AppShell.xaml 설정할때 views라는 별칭을 새로 만들어서 views폴더에 접근한다
+
+xmls:views="~~~Study.Views"
+
+Shell.FlyouyBehavior = "Flyout" 설정으로 바꾸면 왼쪾위에 메뉴바 생성 , 여기서 설정을 "Locked"로 바꾸면 메뉴바가 열린 상태로 고정됨
+
+FlyoutItem에 FlyoutDisplayOptions = "AsMultipleItems"로 주면 메뉴바 눌렀을 때 하위 항목들 볼 수 있게 설정이 바뀜
