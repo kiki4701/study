@@ -1,0 +1,31 @@
+MAUI 13
+
+DisplayAlert(); 사용하면 버튼 눌렀을 때 나오는 메세지 출력
+
+라디오버튼은 한 그룹당 1개만 선택이 가능하다. 그래서 만약 여러개를 선택하게 하려면 그룹명을 2개로 나눠주면 해당 그룹당 하나씩 해서 2개를 선택할 수 있다 CheckedChanged 속성을 이용해서 이벤트 만들수있다
+
+이벤트가 딱히 쓸만한게 없는 요소들에 이벤트를 주고싶을 때
+
+탭제스처를 사용하면 클릭이벤트 효과를 만들 수 있다.
+
+ex)
+
+<Label Text="탭제스처">
+    <Label.GestureRecognizers>
+        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+    </Label.GestureRecognizers>
+</Label>
+
+이렇게 해당 요소 안에 <요소.GestureRecognizers> 를 만들어준 뒤 그 안에 <TapGestureRecognizer> 요소를 만들어준다 TapGestureRecognizer의 Tapped 속성을 이용하면 탭 됐을 때 일어날 이벤트를 메서드로 설정할 수 있다
+
+var label = sender as Label;
+
+하면 sender를 Label로 형변환 한다는 뜻
+
+Entry 요소는 문자를 자유롭게 입력할 수 있는 요소
+
+Placeholder 를 이용해서 해당 요소에 글자를 넣을 수 있다
+
+Keyboard 속성을 이용하면 문자열, 숫자만 등등 지정할 수 있다
+
+IsPassword = "True" 로 설정하면 비밀번호입력으로 전환되고 TextChanged 속성을 사용하면 해당 Entry 요소에 변화가 있을 때 마다 이벤트를 설정해 줄 수 있다
