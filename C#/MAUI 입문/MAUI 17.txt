@@ -1,0 +1,5 @@
+MAUI 17
+
+리스트뷰는 수직으로 나열만 가능한대
+
+컬렉션뷰는 Orientation = "Horizontal"로 하면 수평으로도 나열 가능하다

@@ -1,0 +1,7 @@
+MAUI 14
+
+ActivityIndicator은 로딩중표시, 빙글빙글 도는 동그라미, Isrunning = "True"로 해야 나타나고 false하면 사라짐
+
+DatePicker는 날짜를 나타내는 요소이고 DateSelected 속성을 이용해서 이벤트를 걸 수 있다.
+
+Date를 ToString으로 형변환 할 때는 Date.ToString("D"); 이렇게 D를 넣어줘야 연도,날짜,요일이 나온다.
