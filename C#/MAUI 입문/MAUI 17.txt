@@ -3,3 +3,19 @@ MAUI 17
 리스트뷰는 수직으로 나열만 가능한대
 
 컬렉션뷰는 Orientation = "Horizontal"로 하면 수평으로도 나열 가능하다
+
+컬렉션뷰에서 선택을 하고싶을 땐 SelectionMode 속성을 이용하고 이벤트를 설정할 때는 SelctionChanged 속성을 사용하면 된다.
+
+CollectionView.ItemsLayout 을 이용하면 뷰를 가로, 분할 등등 설정할 수 있다
+
+GridItemsLayout 안에
+
+Orientation = "Horizontal" 을 이용하면 가로로 나열할 수 있고, Span 속성을 사용하면 분할해서 표현할 수 있다.
+
+VerticalItemSpacing ,HorizontalItemSpacing 으로 여백 설정
+
+.cs 파일에서 이벤트 걸어줄 때는
+
+e.CurrentSelection.FirstOrDefault() 를 형변환해야 한다
+
+var selItem = e.CurrentSelection.FirstOrDefault() as Person; 이런식으로

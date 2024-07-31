@@ -1,0 +1,25 @@
+MAUI 16
+
+리스트뷰는 리스트를 출력하는 뷰...
+
+View.cs페이지에서 ITemSource를 이용해서 xaml파일에 있는 배열에 바로 바인딩 할 수 있다.
+
+ex)
+
+lst.ItemSource = list;
+
+ListView 만 생성해서 출력하면 Person 클래스의 경로만 그대로 출력되게 된다.
+
+ListView.ItemTemPlate(디자인부분) 안에
+
+DateTemplate안에
+
+ViewCell 안에
+
+Label을 만들어서 리스트의 데이터를 바인딩 해줘야 원하는대로 출력이 가능하다
+
+여기서는 ItemSource를 쓰지않는게 .cs페이지에서 리스트를 만들어서 바로 바인딩해서 넘겨줬기 때문에 디자인페이지인 ItemTemplate 만 이용하면된다.
+
+ItemSelected 이용하면 이벤트를 만들 수 있다.
+
+생성자 안에서 넘어온 매개변수로 바인딩을 할 때는 생성자 안에서 BindingContext = Person; 이런식으로 바인딩 해줄 수 있다.
