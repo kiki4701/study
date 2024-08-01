@@ -1,0 +1,9 @@
+MAUI 19
+
+ctor + tab 하면 생성자 자동생성
+
+ICommand 이용해서 이벤트를 바인딩해서 사용할 수 있다
+
+ICommand 생성하고 생성자 안에 람다식 이용해서 메서드를 만들어준 뒤 xaml에 바인딩을 해서 사용하면 된다
+
+바인딩 할 때는 Command = "{Binding ICommand 이름}" 이렇게 하면 되고, 파라미터가 있는 경우 CommandParameter = "{Binding Source = {x:Reference 사용할이름}" 이런식으로 하면 된다.
