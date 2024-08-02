@@ -1,0 +1,5 @@
+MAUI 22
+
+Resources - Styles 에 Styles.xaml에 기본스타일들이 설정되어있고 같은 폴더 안에 Colors.xaml 에 기본색들이 저장되어있는데 여기에 새로운 스타일이나 칼라를 추가해서 사용할 수도 있고 이미 설정되어있는 것들을 수정해서 사용할 수도 있다.
+
+ex) primary설정되어있는 Color 다른색으로 바꾸기 등등
